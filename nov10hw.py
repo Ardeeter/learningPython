@@ -150,6 +150,6 @@
 #         total = i*j
 #         print(f"{i} X {j} = {total}")
 #     print()
-    
+
 
 
