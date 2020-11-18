@@ -1,5 +1,6 @@
 # **********SMALL**********
 
+
 # #1 Madlib Function
 # def madlib (name, subject):
 #     print (f"{name}'s favorite subject is {subject}.")
@@ -37,10 +38,8 @@
 
 #5 is_odd Function
 # def is_odd(number):
-#         if number != 0 and is_even(number) == False:
-#             return True
-#         else:
-#             return False
+#         if number != 0:
+#             return not(is_even(number))
 
 # number1 = int(input("Please enter a number: "))
 # print(is_odd(number1))
@@ -69,10 +68,28 @@
 
 
 # **********MEDIUM**********
+
+
 #1 Find the Smallest Number
 # def smallest(listOfNumbers):
 #     sortedNumbers = sorted(listOfNumbers)
 #     return sortedNumbers[0]
+
+# OR
+
+# def smallest(listOfNumbers):
+#     minNumber = min(listOfNumbers)
+#     return minNumber
+
+# OR
+
+# def smallest(listOfNumbers):
+#     result = listOfNumbers[0]
+#     for number in listOfNumbers:
+#         if number < result:
+#             result = number
+#     return result
+
 
 # listOfNumbers1 = [-1, 4, 8, 2, 9, 3, 10, 6, 15, 34, 0]
 # print(smallest(listOfNumbers1))
@@ -82,6 +99,21 @@
 #     sortedNumbers = sorted(listOfNumbers)
 #     return sortedNumbers[-1]
 
+# OR
+
+# def largest(listOfNumbers):
+#     maxNumber = max(listOfNumbers)
+#     return maxNumber
+
+# OR
+
+# def largest(listOfNumbers):
+#     result = listOfNumbers[0]
+#     for number in listOfNumbers:
+#         if number > result:
+#             result = number
+#     return result
+
 # listOfNumbers1 = [4, 8, 2, 9, 3, 10, 6, 15, 34, 0]
 # print(largest(listOfNumbers1))
 
@@ -89,6 +121,15 @@
 # def shortest(listOfStrings):
 #     minString = min(listOfStrings, key=len)
 #     return minString
+
+# OR
+
+# def shortest(listOfStrings):
+#     result = listOfStrings[0]
+#     for string in (listOfStrings):
+#         if len(string) < len(result):
+#             result = string
+#     return result
 
 # listOfStrings1 = ["hi", "hello", "bye", "goodbye"]
 # print(shortest(listOfStrings1))
@@ -98,5 +139,21 @@
 #     maxString = max(listOfStrings, key=len)
 #     return maxString
 
+# OR
+
+# def longest(listOfStrings):
+#     result = listOfStrings[0]
+#     for string in listOfStrings:
+#         if len(string) > len(result):
+#             result = string
+#     return result
+
 # listOfStrings1 = ["hi", "hello", "bye", "goodbye"]
 # print(longest(listOfStrings1))
+
+
+# **********LARGE**********
+
+
+# # #1 Tic-Tac-Toe
+# def move(board, location, player):
